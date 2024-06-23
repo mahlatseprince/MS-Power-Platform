@@ -1,0 +1,14 @@
+FirstN(
+    Sort(
+        Filter(
+            UTRList,
+            StartsWith(
+                UTRKey,
+                TextInput4.Text
+            ) && (Status = "Planned" Or Status = "Current" Or Status = "To Introduce" Or Status = "Investigation")
+        ),
+        UTRKey,
+        SortOrder.Ascending
+    ),
+    10
+)
