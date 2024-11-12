@@ -1,0 +1,1 @@
+Concat( Split(Label1.Text, "" ), If( IsMatch(Value, "([A-Za-z0-9 ])" ), Value ) )
